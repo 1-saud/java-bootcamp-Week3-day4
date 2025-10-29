@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+
+        Book b = new Book("the book", 100, "Saud");
+        Movie m = new Movie("the seconde book", 200, "Khalid");
+
+        System.out.println("Book name: " + b.getName());
+        System.out.println("discount: " + b.getDiscount());
+
+        System.out.println("Movie name: " + m.getName());
+        System.out.println("discount: " + m.getDiscount());
+
+        MovablePoint p = new MovablePoint(0, 0, 5, 10);
+
+        System.out.println(p.toString());
+        p.moveUp();
+        p.moveRight();
+        p.moveDown();
+        p.moveLeft();
+        System.out.println(p.toString());
+    
+
+    }
+}
